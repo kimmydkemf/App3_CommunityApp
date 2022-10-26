@@ -3,6 +3,7 @@ package reb.or.kr.app3_communityapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import reb.or.kr.app3_communityapp.databinding.ActivityBoardMainBinding
 
@@ -23,6 +24,15 @@ class BoardMainActivity : AppCompatActivity() {
             "board_main"->{
                 currentFragment=BoardMainFragment()
             }
+            "board_read"->{
+                currentFragment=BoardReadFragment()
+            }
+            "board_write"->{
+                currentFragment=BoardWriteFragment()
+            }
+            "board_modify"->{
+                currentFragment=BoardModifyFragment()
+            }
         }
         val trans=supportFragmentManager.beginTransaction()
         trans.replace(R.id.board_main_container,currentFragment)
@@ -33,5 +43,8 @@ class BoardMainActivity : AppCompatActivity() {
             trans.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
         }
         trans.commit()
+    }
+    fun fragmentRemoveBackStack(name:String){
+        supportFragmentManager.popBackStack(name,FragmentManager.POP_BACK_STACK_INCLUSIVE)
     }
 }

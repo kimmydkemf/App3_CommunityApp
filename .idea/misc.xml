@@ -8,10 +8,16 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20574951171874994" />
         <entry key="app/src/main/res/layout/board_main_recycler_item.xml" value="0.13489583333333333" />
         <entry key="app/src/main/res/layout/fragment_board_main.xml" value="0.13489583333333333" />
+        <entry key="app/src/main/res/layout/fragment_board_modify.xml" value="0.13489583333333333" />
+        <entry key="app/src/main/res/layout/fragment_board_read.xml" value="0.13489583333333333" />
+        <entry key="app/src/main/res/layout/fragment_board_write.xml" value="0.13489583333333333" />
         <entry key="app/src/main/res/layout/fragment_join.xml" value="0.13489583333333333" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.13489583333333333" />
         <entry key="app/src/main/res/layout/fragment_nick_name.xml" value="0.13489583333333333" />
         <entry key="app/src/main/res/menu/board_main_menu.xml" value="0.13489583333333333" />
+        <entry key="app/src/main/res/menu/board_modify_menu.xml" value="0.13489583333333333" />
+        <entry key="app/src/main/res/menu/board_read_menu.xml" value="0.13489583333333333" />
+        <entry key="app/src/main/res/menu/board_write_menu.xml" value="0.13385416666666666" />
       </map>
     </option>
   </component>

@@ -45,6 +45,11 @@ class BoardMainFragment : Fragment() {
                     boardListBuilder.show()
                     true
                 }
+                R.id.board_main_menu_write->{
+                    val act=activity as BoardMainActivity
+                    act.fragmentController("board_write",true,true)
+                    true
+                }
                 else->false
             }
         }
@@ -82,7 +87,8 @@ class BoardMainFragment : Fragment() {
         inner class ViewHolderClass(boardMainRecyclerItemBinding: BoardMainRecyclerItemBinding)
             :RecyclerView.ViewHolder(boardMainRecyclerItemBinding.root),View.OnClickListener{
                 override fun onClick(p0: View?) {
-
+                    val act=activity as BoardMainActivity
+                    act.fragmentController("board_read",true,true)
                 }
             }
     }
