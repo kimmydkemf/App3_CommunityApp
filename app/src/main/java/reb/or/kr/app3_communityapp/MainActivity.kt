@@ -12,6 +12,11 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding:ActivityMainBinding
     lateinit var currentFragment:Fragment
 
+    // 사용자 정보
+    var userId =""
+    var userPw=""
+    var userNickName=""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
